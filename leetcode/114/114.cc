@@ -38,6 +38,7 @@ public:
         }
     }
 
+    // TODO(isfull): maybe we can remove this func
     void ShiftToLastNode(TreeNode* root, TreeNode** p) {
         if (root == NULL){
             return;
