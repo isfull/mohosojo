@@ -1,5 +1,7 @@
-algo: Sieve of Eratosthenes  
-Memory optimization:  
+##algo: Sieve of Eratosthenes  
+##Memory optimization:  
+reuse malloc mem if n < len
+   
 		if (isPrime != NULL) {  
             if (len < n) {  
                 free(isPrime);  
