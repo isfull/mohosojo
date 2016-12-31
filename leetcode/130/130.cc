@@ -8,10 +8,12 @@ public:
         }
         length_ = board[0].size();
         height_ = board.size();
+        // 初始化四周的种子点
         InitSet(board);
         set<pair<int, int> >::const_iterator i_set = init_set_.begin();
         int x = 0;
         int y = 0;
+        // BFS增加点
         while (init_set_.size() > 0)
         {
             i_set = init_set_.begin();
@@ -20,7 +22,7 @@ public:
             init_set_.erase(i_set);
             Check4(x, y, board);
         }
-        // set result
+        // 不在集合内的O都改成X
         for (int i = 0; i < height_; ++i)
         {
             for (int j = 0; j < length_; ++j)
