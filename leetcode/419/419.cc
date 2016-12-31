@@ -33,7 +33,7 @@ public:
                         }
                         else
                         {
-                            if (board[i][j-1] != 'X' && board[-1][j] != 'X')
+                            if (board[i][j-1] != 'X' && board[i-1][j] != 'X')
                             {
                                 ++count;
                             }
