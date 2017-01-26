@@ -1,3 +1,3 @@
-[submodule "cpp_test/toft"]
-	path = cpp_test/toft
+[submodule "toft"]
+	path = toft
 	url = https://github.com/chen3feng/toft.git
