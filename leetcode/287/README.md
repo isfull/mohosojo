@@ -1,1 +1,0 @@
-treat the array as a link list with a cycle; ref->142

@@ -1,2 +1,0 @@
-#!/bin/bash
-ssh -lchenyu -q 132.148.23.104
