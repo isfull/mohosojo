@@ -1,5 +1,4 @@
 #include "wrs.h"
-#include <algorithm>    // std::sort
 #include <iostream>                                                                                    
 #include <sstream>  
 
@@ -32,4 +31,7 @@ bool WeightedRandomSelection(std::vector<int32_t>& input,
     }
     return true;
 }
+
+
+
 } // namespace mohosojo
