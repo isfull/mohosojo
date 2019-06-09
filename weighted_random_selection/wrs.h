@@ -2,7 +2,7 @@
 #define WRS_H
 
 #include "stdint.h"
-//#include <algorithm>    // std::sort
+#include <algorithm>    // std::sort
 #include <stdlib.h> 
 #include <math.h> 
 #include <vector>

@@ -14,7 +14,7 @@
 # Points to the root of Google Test, relative to where this file is.
 # Remember to tweak this if you move this file.
 
-GTEST_DIR = ../gtest
+GTEST_DIR = ../outlib/gtest/googletest
 
 # Points to the location of the Google Test libraries
 GTEST_LIB_DIR = $(GTEST_DIR)/lib
@@ -113,5 +113,5 @@ wrs_unittest.o : $(USER_DIR)/wrs_unittest.cc \
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/wrs_unittest.cc
 
 wrs_unittest :  wrs_unittest.o $(GTEST_LIBS)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -L$(GTEST_LIB_DIR) -lgtest_main -lpthread $^ -o $@
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -L. -L$(GTEST_LIB_DIR) -lgtest_main -lpthread $^ -o $@
 
