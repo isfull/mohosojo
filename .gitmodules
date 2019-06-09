@@ -1,6 +1,6 @@
 [submodule "toft"]
 	path = toft
 	url = https://github.com/chen3feng/toft.git
-[submodule "gtest"]
+[submodule "outlib/gtest"]
 	path = outlib/gtest
 	url = https://github.com/google/googletest.git
