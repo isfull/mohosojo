@@ -24,7 +24,7 @@ bool WeightedRandomSelection(std::vector<int32_t>& input,
         v_weight.push_back(std::make_pair(index, key));
 
     }
-    sort(v_weight.begin(), v_weight.end(), WRS_compare);
+    std::sort(v_weight.begin(), v_weight.end(), WRS_compare);
     std::vector<std::pair<int32_t, double> >::iterator i_weight = v_weight.begin();
     for (; i_weight != v_weight.end(); ++i_weight) {
         output->push_back(i_weight->first);
